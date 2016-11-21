@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+header {
+  /*background: linear-gradient(#252839,#b5b5b7);
+    height: 100vh;*/ }
+
+strong {
+  color: #aed544;
+  display: inline-block;
+  border-bottom: 1px solid #aed544; }
+
+section {
+  padding: 20px;
+  margin: 10px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  align-items: center; }
+  nav h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: #494E6B; }
+  nav a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #494E6B;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #494E6B;
+    transition: all ease 0.2s; }
+    nav a:hover {
+      color: #FFF;
+      background: #494E6B; }
+
+.landing-section {
+  display: flex;
+  height: 75vh;
+  background: linear-gradient(to right, #494E6B, #98878F);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column; }
+  .landing-section .landing-content {
+    /*display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;*/
+    color: #FFF;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    .landing-section .landing-content h1 {
+      font-weight: 100;
+      font-size: 50px;
+      color: #FFF;
+      text-align: center; }
+    .landing-section .landing-content div {
+      text-align: center; }
+    .landing-section .landing-content a {
+      /*display: inline-block;*/
+      text-decoration: none;
+      padding: 10px 40px;
+      border: 1px solid #98878F;
+      border-radius: 5px;
+      background: #CDA34F;
+      font-size: 18px;
+      color: #FFF; }
+
+.landing-section:before {
+  bottom: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute; }
+
+.landing-section:before {
+  border-bottom-color: #aed544;
+  border-width: 20px; }
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; }
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto; }
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999); }
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000; }
+
+.close:hover {
+  background: #00d9ff; }

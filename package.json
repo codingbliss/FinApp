@@ -1,0 +1,43 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "bower": "^1.7.7",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "node-sass": "^3.11.0",
+    "protractor": "^4.0.9",
+    "webpack": "^1.13.3"
+  },
+  "main": "node-server.js",
+  "scripts": {
+    "start": "node-sass --include-path scss Client/app.scss Client/assets/app.css && webpack && nodemon",
+    "postinstall": "bower install",
+    "build-css": "node-sass --include-path scss Client/app.scss Client/assets/app.css"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "mongoose": "^4.6.6",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.0",
+    "requirejs": "^2.3.2",
+    "serve-favicon": "^2.3.0"
+  }
+}
